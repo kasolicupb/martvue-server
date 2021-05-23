@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    name: user  #数据库名
+    url: jdbc:mysql://localhost:3306/user #url
+    username: root  #用户名
+    password: a1224682201  #密码
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml  #配置映射文件
+  type-aliases-package: webServer.bean #配置实体类
+
+server:
+  port: 8086
